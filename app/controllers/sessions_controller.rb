@@ -10,7 +10,7 @@ class SessionsController < ApplicationController
       redirect_back_or user
     else
       flash.now[:danger] = '認証に失敗しました。'
-    render :new
+      render :new
     end
   end
   
